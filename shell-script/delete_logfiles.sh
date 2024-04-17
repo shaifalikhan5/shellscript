@@ -5,7 +5,7 @@ DATE=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$0
 LOGDIR=/home/shaif/logdir
 LOGFILE=$LOGDIR/$0-$DATE
-
+#
 FILES_TO_DELETE=$(find $APP_LOG_DIR -name "*.log" -type f -mtime +14)
 echo "$FILES_TO_DELETE"
 
